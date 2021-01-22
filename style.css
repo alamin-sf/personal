@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/*---------------------------BASIC SETUP---------------------------------*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin-left: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 90%;
+    max-width: 1024px;
+    margin: auto;
+    
+}
+.btn{
+   background: #2196f3;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    outline: none;
+    border: 1px solid #2196f3;
+    cursor: pointer;
+    
+}
+.section_title{
+    text-align: center;
+    margin-bottom: 35px;
+    
+}
+.section_title h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.section_title h2 span{
+    color: #2196f3;
+}
+
+#about,
+#service,
+#work,
+#testimonial,
+#contact{
+    padding: 60px 0px;
+}
+img{
+    width: 100%;
+}
+:focus {
+    outline: none;
+}
+/*---------------------------START STICKY SETUP---------------------------------*/
+
+header.sticky{
+    background: #fff;
+    padding: 15px 0px;
+    transition: all ease 1s;
+    z-index: 9999;
+}
+header.sticky .nav .logo .icon{
+    color: #000;
+}
+header.sticky .nav .menu ul li a{
+    color: #000;
+}
+/*---------------------------END STICKY SETUP---------------------------------*/
+
+
+/*---------------------------START LOGO SETUP---------------------------------*/
+.nav .logo .icon{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+.nav .logo .icon span{
+    color: crimson;
+    font-weight: 800;
+}
+
+/*---------------------------END LOGO  SETUP---------------------------------*/
+
+
+
+
+/*--------------------------- START HEADER CSS ---------------------------------*/
+
+
+header{
+    background: transparent;
+    padding: 15px 0px;
+    transition: all ease 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav img{
+    width: 150px;
+}
+.nav .menu ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+.nav .menu ul li:last-child{
+    margin-right: 0px;
+}
+.nav .menu ul li a{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all ease 0.5s;
+}
+.nav .menu ul li a:hover{
+    color: crimson;
+}
+/*--------------------------- END HEADER CSS ---------------------------------*/
+
+
+/*--------------------------- START RESPONSIVE HEADER CSS ---------------------------------*/
+header .nav .fa{
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+}
+header .nav #ami{
+    display: none;
+}
+#toggle{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+    
+}
+#toggle ul {
+    padding: 20px 15px;
+}
+#toggle ul li{
+    display: block;
+    margin: 15px 0px;
+}
+#toggle ul li a{
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #111;
+    transition: all ease 0.4s;
+}
+#toggle ul li a:hover{
+    color: #ff0157;
+}
+header.sticky .tanny #open,
+header.sticky .tanny #close{
+    color: #000;
+}
+
+
+/*---------------------------END RESPONSIVE HEADER CSS---------------------------------*/
+
+
+
+/*--------------------------- START HOME CSS ---------------------------------*/
+
+
+#home{
+    background: url(img/banner.jpg) no-repeat center / cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home .home_text h2{
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: #fff;
+}
+#home .home_text h2 span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+#home .home_text h3{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #fff;
+}
+/*--------------------------- END HOME CSS ---------------------------------*/
+
+
+
+/*--------------------------- START ABOUT CSS ---------------------------------*/
+#about{
+    background: #fafafa;
+}
+#about .about_asset{
+    display: flex;
+    justify-content: space-between;
+}
+#about .about_asset .about_text{
+    width: 48%;
+}
+#about .about_asset .about_text h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    
+}
+#about .about_asset .about_img{
+    width: 48%;
+}
+#about .about_asset .about_img img{
+    border-radius: 8px;
+}
+
+/*--------------------------- END ABOUT CSS ---------------------------------*/
+
+
+/*--------------------------- START SERVICES CSS ---------------------------------*/
+
+#service .container .service_grid,
+#work .container .work_grid{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+#service .container .service_grid .service_grid_item{
+    text-align: center;
+    padding: 10px;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+#service .container .service_grid .service_grid_item:hover{
+    transform: translateY(-10px);
+    background: #161616;
+}
+#service .container .service_grid .service_grid_item .fas,
+#service .container .service_grid .service_grid_item .fab{
+    font-size: 40px;
+    color: #2196f3;
+}
+#service .container .service_grid .service_grid_item h3{
+    margin: 5px 0px;
+    transition: 0.3s;
+}
+#service .container .service_grid .service_grid_item:hover h3{
+    color: #fff;
+}
+#service .container .service_grid .service_grid_item:hover p{
+    color: rgba(255, 255, 255, 0.71);
+}
+/*--------------------------- END SERVICES CSS ---------------------------------*/
+
+
+/*--------------------------- START WORK CSS ---------------------------------*/
+#work{
+    background: #fafafa;
+}
+#work .work_grid .work_grid_item a img{
+    border-radius: 8px;
+    display: block;
+}
+#work .button{
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+
+
+/*--------------------------- END WORK CSS ---------------------------------*/
+
+
+/*--------------------------- START TESTIMONIAL CSS ---------------------------------*/
+#testimonial .testimonial_card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#testimonial .testimonial_card .testimonial_card_item{
+    padding: 15px;
+    text-align: left;
+    background: #2196f3;
+}
+#testimonial .testimonial_card .testimonial_card_item:first-child{
+    margin-right: 10px;
+}
+#testimonial .testimonial_card .testimonial_card_item:last-child{
+    margin-left: 10px;
+}
+#testimonial .testimonial_card .testimonial_card_item p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+}
+#testimonial .testimonial_card .testimonial_card_item h3{
+    text-align: right;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 40px;
+    line-height: 1em;
+}
+#testimonial .testimonial_card .testimonial_card_item h3 span{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*--------------------------- END TESTIMONIAL CSS ---------------------------------*/
+
+
+
+/*--------------------------- START CONTACT CSS ---------------------------------*/
+#contact{
+  background: #111;  
+}
+#contact .section_title{
+    color: #fff;
+}
+#contact .contact_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.contact_info .contact_left{
+    width: 60%;
+}
+
+.contact_info .contact_left_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0px;
+}
+.contact_info .contact_left .info,
+.contact_info .contact_right .sms{
+    color: #fff;
+    margin-bottom: 15px;
+}
+.contact_info .contact_left_item .contact_left_icon{
+    width: 15%;
+    margin-top: 2px;
+}
+.contact_info .contact_left_item .contact_left_icon .fas{
+    color: #fff;
+    font-size: 20px;
+}
+.contact_info .contact_left_item .contact_left_text{
+    width: 85%;
+    
+}
+.contact_info .contact_left_item .contact_left_text h3{
+    color: #2196f3;
+    margin-bottom: 2px;
+}
+.contact_info .contact_left_item .contact_left_text p{
+    color: rgba(255, 255, 255, 0.64);
+}
+.contact_info .contact_right input[type="text"],
+.contact_info .contact_right input[type="email"],
+textarea{
+    width: 100%;
+    padding: 8px 6px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    background: #222;
+    color: #fff;
+    margin: 8px 0px;
+    outline: none;
+}
+
+/*--------------------------- END CONTACT CSS ---------------------------------*/
+
+
+
+
+
+/*--------------------------- START FOOTER CSS ---------------------------------*/
+footer{
+    padding: 15px 0px;
+    background: #000;
+    color: #fff;
+}
+footer .footer_text{
+    text-align: center;
+    color: #fff;
+}
+
+/*--------------------------- END FOOTER CSS ---------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------- START MEDIA CSS ---------------------------------*/
+@media only screen and ( max-width: 991px ){
+    
+    #home .home_text h2{
+    font-size: 2em;
+    line-height: 1.5em;
+}
+#home .home_text h2 span{
+    font-size: 1.5em;
+}
+#home .home_text h3{
+    font-size: 1em;
+}
+    #about .about_asset{
+        display: block;
+    }
+    #about .about_asset .about_text{
+        margin-bottom: 30px;
+    }
+    #about .about_asset .about_text,
+    #about .about_asset .about_img{
+        width: 100%;
+    }
+    #service .container .service_grid,
+    #work .container .work_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+    
+    
+}
+
+
+
+
+@media only screen and ( max-width: 768px ){
+
+    .nav .menu{
+    display: none;
+    transition: all ease 0.4s;
+}
+    header .nav #open{
+        display: block;
+    }
+    #contact .contact_info{
+        display: block;
+    }
+    .contact_info .contact_left{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 20px;
+        grid-gap: 10px;
+}
+    .contact_info .contact_left .info,
+    .contact_info .contact_right .sms{
+        display: none;
+}
+    .contact_info .contact_left_item .contact_left_icon{
+        margin: 0;
+    }
+}
+@media only screen and ( max-width: 700px ){
+    .contact_info .contact_left{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and ( max-width: 576px ){
+    #service .container .service_grid,
+    #work .container .work_grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+    #testimonial .testimonial_card{
+        display: block;
+    }
+    #testimonial .testimonial_card .testimonial_card_item:first-child{
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+#testimonial .testimonial_card .testimonial_card_item:last-child{
+    margin-left: 0;
+}
+}
+@media only screen and ( max-width: 480px ){
+        .contact_info .contact_left{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+}
+#home .home_text h2{
+    font-size: 1.5em;
+}
+#home .home_text h2 span{
+    font-size: 1.5em;
+}
+#home .home_text h3{
+    font-size: 1em;
+}
+}
